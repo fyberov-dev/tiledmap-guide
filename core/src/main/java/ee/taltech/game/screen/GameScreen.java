@@ -19,7 +19,9 @@ public class GameScreen extends ScreenAdapter {
     @Override
     public void show() {
         camera = new OrthographicCamera();
-        mapRenderer = new TiledMapLoader("tiled/map.tmx").setupMap();
+        mapRenderer = new TiledMapLoader("tiled/map.tmx")
+            .parseObjectByLayer("fence")
+            .setupMap();
         worldWidth = (int) mapRenderer.getMap().getProperties().get("width") * Constants.PPM;
         worldHeight = (int) mapRenderer.getMap().getProperties().get("height") * Constants.PPM;
     }
