@@ -296,7 +296,7 @@ public TiledMapLoader parseAllObjects() {
 
 ### Tile Object
 
-For the polygon objects just click on the `Insert Tile` or press `T` to switch mode. Choose tile in the tileset and put it on the map
+For the tile objects just click on the `Insert Tile` or press `T` to switch mode. Choose tile in the tileset and put it on the map
 
 ![14.png](guide/14.png)
 
